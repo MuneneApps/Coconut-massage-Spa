@@ -28,6 +28,31 @@
 
         <!-- Template Stylesheet -->
         <link href="css/style.css" rel="stylesheet">
+
+        <style>
+            .whatsapp-float {
+                position: fixed;
+                width: 60px;
+                height: 60px;
+                bottom: 20px;
+                right: 20px;
+                background-color: #25d366;
+                color: white;
+                border-radius: 50%;
+                text-align: center;
+                font-size: 30px;
+                z-index: 1000;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+                transition: transform 0.2s;
+            }
+            .whatsapp-float:hover {
+                transform: scale(1.1);
+                text-decoration: none;
+            }
+            </style>
     </head>
 
     <body>
@@ -48,7 +73,7 @@
                             <div class="d-flex flex-wrap">
                                 <a href="#location" class="me-4 text-light"><i class="fas fa-map-marker-alt text-primary me-2"></i>Find Our Location</a>
                                 <a href="#" class="me-4 text-light"><i class="fas fa-phone-alt text-primary me-2"></i>+254725389089</a>
-                                <a href="#" class="text-light"><i class="fas fa-envelope text-primary me-2"></i>coconutmassage@gmail.com</a>
+                                <a href="#" class="text-light"><i class="fas fa-envelope text-primary me-2"></i>doriskaura@gmail.com</a>
                             </div>
 
                         </div>
@@ -75,7 +100,7 @@
                             </div>
                             <div class="d-flex align-items-center flex-nowrap pt-xl-0">
                                 
-                                <a href="appointment.html" class="btn btn-primary btn-primary-outline-0 rounded-pill py-3 px-4 ms-4">Book Appointment</a>
+                                <a href="#appointment" class="btn btn-primary btn-primary-outline-0 rounded-pill py-3 px-4 ms-4">Book Appointment</a>
                             </div>
                         </div>
                     </nav>
@@ -107,8 +132,8 @@
                                     <h1 class="display-1 text-capitalize text-dark mb-3">Full Body Massage</h1>
                                     <p class="mx-md-5 fs-4 px-4 mb-5 text-dark">Experience relaxing full body therapy, back & neck massage, feet & legs massage, and soothing body scrubs — all by Doris.</p>
                                     <div class="d-flex align-items-center justify-content-center">
-                                        <a class="btn btn-light rounded-pill py-3 px-5 me-4" href="#">Learn More</a>
-                                        <a class="btn btn-primary rounded-pill py-3 px-5" href="#">Book Now</a>
+                                        
+                                        <a class="btn btn-primary rounded-pill py-3 px-5" href="#appointment">Book Now</a>
                                     </div>
                                 </div>
                             </div>
@@ -123,8 +148,8 @@
                                     <h1 class="display-1 text-capitalize text-dark mb-3">Pedicure & Manicure</h1>
                                     <p class="mx-md-5 fs-4 px-5 mb-5 text-dark">Enjoy professional pedicure and manicure services designed to refresh, restore, and pamper you the right way.</p>
                                     <div class="d-flex align-items-center justify-content-center">
-                                        <a class="btn btn-light rounded-pill py-3 px-5 me-4" href="#">View Services</a>
-                                        <a class="btn btn-primary rounded-pill py-3 px-5" href="#">Book Now</a>
+                                        
+                                        <a class="btn btn-primary rounded-pill py-3 px-5" href="#appointment">Book Now</a>
                                     </div>
                                 </div>
                             </div>
@@ -139,8 +164,8 @@
                                     <h1 class="display-1 text-capitalize text-dark">Body Scrub Treatment</h1>
                                     <p class="mx-md-5 fs-4 px-5 mb-5 text-dark">Revitalize your skin with our exfoliating body scrubs, designed to leave you glowing and deeply relaxed.</p>
                                     <div class="d-flex align-items-center justify-content-center">
-                                        <a class="btn btn-light rounded-pill py-3 px-5 me-4" href="#">Explore</a>
-                                        <a class="btn btn-primary rounded-pill py-3 px-5" href="#">Book Now</a>
+                                        
+                                        <a class="btn btn-primary rounded-pill py-3 px-5" href="#appointment">Book Now</a>
                                     </div>
                                 </div>
                             </div>
@@ -167,119 +192,122 @@
 
        <!-- Services Start -->
 <!-- Services Start -->
-<div class="container-fluid services py-5">
-    <div class="container py-5">
-        <div class="mx-auto text-center mb-5" style="max-width: 800px;">
-            <p class="fs-4 text-uppercase text-center text-primary">Our Services</p>
-            <h1 class="display-3">Spa & Beauty Services</h1>
-        </div>
-
-        <div class="row g-4">
-
-            <div class="col-lg-6">
-                <div class="services-item bg-light border-4 border-end border-primary rounded p-4">
-                    <div class="row align-items-center">
-                        <div class="col-8">
-                            <div class="services-content text-end">
-                                <h3>Full Body Massage</h3>
-                                <p>Relax and rejuvenate with full body massage therapy, targeting stress and muscle tension.</p>
-                                <a href="#" class="btn btn-primary rounded-pill py-2 px-4">Book Now</a>
+<section id="service">
+    <div class="container-fluid services py-5">
+        <div class="container py-5">
+            <div class="mx-auto text-center mb-5" style="max-width: 800px;">
+                <p class="fs-4 text-uppercase text-center text-primary">Our Services</p>
+                <h1 class="display-3">Spa & Beauty Services</h1>
+            </div>
+    
+            <div class="row g-4">
+    
+                <div class="col-lg-6">
+                    <div class="services-item bg-light border-4 border-end border-primary rounded p-4">
+                        <div class="row align-items-center">
+                            <div class="col-8">
+                                <div class="services-content text-end">
+                                    <h3>Full Body Massage</h3>
+                                    <p>Relax and rejuvenate with full body massage therapy, targeting stress and muscle tension.</p>
+                                    <a href="#" class="btn btn-primary rounded-pill py-2 px-4">Book Now</a>
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-4">
-                            <div class="services-img d-flex align-items-center justify-content-center rounded">
-                                <img src="img/services-1.jpg" class="img-fluid rounded" alt="Full Body Massage">
+                            <div class="col-4">
+                                <div class="services-img d-flex align-items-center justify-content-center rounded">
+                                    <img src="img/services-1.jpg" class="img-fluid rounded" alt="Full Body Massage">
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-
-            <div class="col-lg-6">
-                <div class="services-item bg-light border-4 border-start border-primary rounded p-4">
-                    <div class="row align-items-center">
-                        <div class="col-4">
-                            <div class="services-img d-flex align-items-center justify-content-center rounded">
-                                <img src="img/services-2.jpg" class="img-fluid rounded" alt="Back & Neck Massage">
+    
+                <div class="col-lg-6">
+                    <div class="services-item bg-light border-4 border-start border-primary rounded p-4">
+                        <div class="row align-items-center">
+                            <div class="col-4">
+                                <div class="services-img d-flex align-items-center justify-content-center rounded">
+                                    <img src="img/services-2.jpg" class="img-fluid rounded" alt="Back & Neck Massage">
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-8">
-                            <div class="services-content text-start">
-                                <h3>Back & Neck Massage</h3>
-                                <p>Targeted therapy to relieve tension in the back and neck, leaving you refreshed and relaxed.</p>
-                                <a href="#" class="btn btn-primary rounded-pill py-2 px-4">Book Now</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-6">
-                <div class="services-item bg-light border-4 border-end border-primary rounded p-4">
-                    <div class="row align-items-center">
-                        <div class="col-8">
-                            <div class="services-content text-end">
-                                <h3>Feet & Legs Massage</h3>
-                                <p>Rejuvenate tired feet and legs with soothing massage techniques that improve circulation.</p>
-                                <a href="#" class="btn btn-primary rounded-pill py-2 px-4">Book Now</a>
-                            </div>
-                        </div>
-                        <div class="col-4">
-                            <div class="services-img d-flex align-items-center justify-content-center rounded">
-                                <img src="img/services-3.jpg" class="img-fluid rounded" alt="Feet & Legs Massage">
+                            <div class="col-8">
+                                <div class="services-content text-start">
+                                    <h3>Back & Neck Massage</h3>
+                                    <p>Targeted therapy to relieve tension in the back and neck, leaving you refreshed and relaxed.</p>
+                                    <a href="#" class="btn btn-primary rounded-pill py-2 px-4">Book Now</a>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-
-            <div class="col-lg-6">
-                <div class="services-item bg-light border-4 border-start border-primary rounded p-4">
-                    <div class="row align-items-center">
-                        <div class="col-4">
-                            <div class="services-img d-flex align-items-center justify-content-center rounded">
-                                <img src="img/services-4.jpg" class="img-fluid rounded" alt="Pedicure & Manicure">
+    
+                <div class="col-lg-6">
+                    <div class="services-item bg-light border-4 border-end border-primary rounded p-4">
+                        <div class="row align-items-center">
+                            <div class="col-8">
+                                <div class="services-content text-end">
+                                    <h3>Feet & Legs Massage</h3>
+                                    <p>Rejuvenate tired feet and legs with soothing massage techniques that improve circulation.</p>
+                                    <a href="#" class="btn btn-primary rounded-pill py-2 px-4">Book Now</a>
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-8">
-                            <div class="services-content text-start">
-                                <h3>Pedicure & Manicure</h3>
-                                <p>Professional pedicure and manicure services to refresh and beautify your hands and feet.</p>
-                                <a href="#" class="btn btn-primary rounded-pill py-2 px-4">Book Now</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-6">
-                <div class="services-item bg-light border-4 border-end border-primary rounded p-4">
-                    <div class="row align-items-center">
-                        <div class="col-8">
-                            <div class="services-content text-end">
-                                <h3>Scrub & Body Massage</h3>
-                                <p>Exfoliate and relax with body scrubs and massage, leaving your skin smooth and refreshed.</p>
-                                <a href="#" class="btn btn-primary rounded-pill py-2 px-4">Book Now</a>
-                            </div>
-                        </div>
-                        <div class="col-4">
-                            <div class="services-img d-flex align-items-center justify-content-center rounded">
-                                <img src="img/services-5.jpg" class="img-fluid rounded" alt="Scrub & Body Massage">
+                            <div class="col-4">
+                                <div class="services-img d-flex align-items-center justify-content-center rounded">
+                                    <img src="img/services-3.jpg" class="img-fluid rounded" alt="Feet & Legs Massage">
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-
-            <div class="col-12">
-                <div class="services-btn text-center">
-                    <a href="#" class="btn btn-primary rounded-pill py-3 px-5">More Services</a>
+    
+                <div class="col-lg-6">
+                    <div class="services-item bg-light border-4 border-start border-primary rounded p-4">
+                        <div class="row align-items-center">
+                            <div class="col-4">
+                                <div class="services-img d-flex align-items-center justify-content-center rounded">
+                                    <img src="img/services-4.jpg" class="img-fluid rounded" alt="Pedicure & Manicure">
+                                </div>
+                            </div>
+                            <div class="col-8">
+                                <div class="services-content text-start">
+                                    <h3>Pedicure & Manicure</h3>
+                                    <p>Professional pedicure and manicure services to refresh and beautify your hands and feet.</p>
+                                    <a href="#" class="btn btn-primary rounded-pill py-2 px-4">Book Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+    
+                <div class="col-lg-6">
+                    <div class="services-item bg-light border-4 border-end border-primary rounded p-4">
+                        <div class="row align-items-center">
+                            <div class="col-8">
+                                <div class="services-content text-end">
+                                    <h3>Scrub & Body Massage</h3>
+                                    <p>Exfoliate and relax with body scrubs and massage, leaving your skin smooth and refreshed.</p>
+                                    <a href="#" class="btn btn-primary rounded-pill py-2 px-4">Book Now</a>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="services-img d-flex align-items-center justify-content-center rounded">
+                                    <img src="img/services-5.jpg" class="img-fluid rounded" alt="Scrub & Body Massage">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col-12">
+                    <div class="services-btn text-center">
+                        <a href="#" class="btn btn-primary rounded-pill py-3 px-5">More Services</a>
+                    </div>
+                </div>
+    
             </div>
-
         </div>
     </div>
-</div>
+
+</section>
 <!-- Services End -->
  <br> 
  <br>
@@ -293,156 +321,199 @@
 
         
        <!-- About Start -->
-<div class="container-fluid about py-5">
-    <div class="container py-5">
-        <div class="row g-5 align-items-center">
-            <div class="col-lg-5">
-                <div class="video">
-                    <img src="img/d5 .jpg" class="img-fluid rounded" alt="Spa Image">
-                    <div class="position-absolute rounded border-5 border-top border-start border-white" style="bottom: 0; right: 0;">
-                        <img src="img/d1.jpg" class="img-fluid rounded" alt="Spa Treatment">
-                    </div>
-                    <button type="button" class="btn btn-play" data-bs-toggle="modal" data-src="https://www.youtube.com/embed/DWRcNpR6Kdc" data-bs-target="#videoModal">
-                        <span></span>
-                    </button>
-                </div>
-            </div>
-            
-            <div class="col-lg-7">
-                <p class="fs-4 text-uppercase text-primary">About Us</p>
-                <h1 class="display-4 mb-4">Your Best Spa, Beauty & Skin Care Center</h1>
-                <p class="mb-4">At our spa, we specialize in full body massage, back & neck therapy, feet & legs massage, pedicure, manicure, body scrubs, and holistic relaxation treatments, all provided with care by Doris. Our goal is to offer a serene environment for rejuvenation and wellness.</p>
-                
-                <div class="row g-4">
-                    <div class="col-md-6">
-                        <div class="d-flex align-items-center">
-                            <i class="fas fa-gift fa-3x text-primary"></i>
-                            <div class="ms-4">
-                                <h5 class="mb-2">Special Offers</h5>
-                                <p class="mb-0">Enjoy seasonal promotions on massages, skincare, and body treatments tailored for your relaxation.</p>
+       <section id="about">
+        <div class="container-fluid about py-5">
+            <div class="container py-5">
+                <div class="row g-5 align-items-center">
+                    <div class="col-lg-5 position-relative">
+                        <div class="video">
+                            <img src="img/d5.jpg" class="img-fluid rounded" alt="Spa Image">
+                            <div class="position-absolute rounded border-5 border-top border-start border-white" style="bottom: 0; right: 0;">
+                                <img src="img/d1.jpg" class="img-fluid rounded" alt="Spa Treatment">
                             </div>
+                            <button type="button" class="btn btn-play" data-bs-toggle="modal" data-bs-target="#videoModal">
+                                <span></span>
+                            </button>
                         </div>
                     </div>
-                    <div class="col-md-6">
-                        <div class="d-flex align-items-center">
-                            <i class="fas fa-hand-holding-heart fa-3x text-primary"></i>
-                            <div class="ms-4">
-                                <h5 class="mb-2">Personalized Care</h5>
-                                <p class="mb-0">Each treatment is customized to your needs, ensuring a unique and refreshing spa experience.</p>
+    
+                    <div class="col-lg-7">
+                        <p class="fs-4 text-uppercase text-primary">About Us</p>
+                        <h1 class="display-4 mb-4">Your Best Spa, Beauty & Skin Care Center</h1>
+                        <p class="mb-4">
+                            At our spa, we specialize in full body massage, back & neck therapy, feet & legs massage, pedicure, manicure, body scrubs, and holistic relaxation treatments, all provided with care by Doris. Our goal is to offer a serene environment for rejuvenation and wellness.
+                        </p>
+    
+                        <div class="row g-4 mb-4">
+                            <div class="col-md-6">
+                                <div class="d-flex align-items-center">
+                                    <i class="fas fa-gift fa-3x text-primary"></i>
+                                    <div class="ms-4">
+                                        <h5 class="mb-2">Special Offers</h5>
+                                        <p class="mb-0">Enjoy seasonal promotions on massages, skincare, and body treatments tailored for your relaxation.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="d-flex align-items-center">
+                                    <i class="fas fa-hand-holding-heart fa-3x text-primary"></i>
+                                    <div class="ms-4">
+                                        <h5 class="mb-2">Personalized Care</h5>
+                                        <p class="mb-0">Each treatment is customized to your needs, ensuring a unique and refreshing spa experience.</p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
+    
+                        <p class="my-4">
+                            Our team focuses on creating a relaxing environment where you can unwind, de-stress, and rejuvenate your mind and body. Every session is delivered with expertise and attention to detail.
+                        </p>
+    
+                        <p class="mb-4">
+                            Open Monday to Friday: 8am - 6pm, Saturday: 9am - 5pm, Sunday: 10am - 5pm. Experience top-quality care in a tranquil setting — your wellness is our priority.
+                        </p>
+    
+                        <a href="#" class="btn btn-primary rounded-pill py-3 px-5">Explore More</a>
                     </div>
-                </div>
-
-                <p class="my-4">Our team focuses on creating a relaxing environment where you can unwind, de-stress, and rejuvenate your mind and body. Every session is delivered with expertise and attention to detail.</p>
-                
-                <p class="mb-4">Open Monday to Friday: 8am - 6pm, Saturday: 9am - 5pm, Sunday: 10am - 5pm. Experience top-quality care in a tranquil setting — your wellness is our priority.</p>
-                
-                <a href="#" class="btn btn-primary rounded-pill py-3 px-5">Explore More</a>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- Modal Video -->
-<div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content rounded-0">
-            <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Youtube Video</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                <!-- 16:9 aspect ratio -->
-                <div class="ratio ratio-16x9">
-                    <iframe class="embed-responsive-item" src="" id="video" allowfullscreen allowscriptaccess="always"
-                        allow="autoplay"></iframe>
                 </div>
             </div>
         </div>
-    </div>
-</div>
-<!-- About End -->
-
-
-
-        <!-- Appointment Start -->
-<div class="container-fluid appointment py-5">
-    <div class="container py-5">
-        <div class="row g-5 align-items-center">
-
-            <!-- Appointment Form -->
-            <div class="col-lg-6">
-                <div class="appointment-form p-5">
-                    <p class="fs-4 text-uppercase text-primary">Get In Touch</p>
-                    <h1 class="display-4 mb-4 text-white">Book an Appointment</h1>
-                    <form>
-                        <div class="row gy-3 gx-4">
-                            <div class="col-lg-6">
-                                <input type="text" class="form-control py-3 border-white bg-transparent text-white" placeholder="First Name">
-                            </div>
-                            <div class="col-lg-6">
-                                <input type="email" class="form-control py-3 border-white bg-transparent text-white" placeholder="Email">
-                            </div>
-                            <div class="col-lg-6">
-                                <select class="form-select py-3 border-white bg-transparent" aria-label="Select Service">
-                                    <option selected>Select Service</option>
-                                    <option value="1">Full Body Massage</option>
-                                    <option value="2">Pedicure & Manicure</option>
-                                    <option value="3">Facial Therapy</option>
-                                </select>
-                            </div>
-                            <div class="col-lg-6">
-                                <input type="date" class="form-control py-3 border-white bg-transparent">
-                            </div>
-                            <div class="col-lg-12">
-                                <textarea class="form-control border-white bg-transparent text-white" name="text" id="area-text" cols="30" rows="5" placeholder="Write your message or requests"></textarea>
-                            </div>
-                            <div class="col-lg-12">
-                                <button type="button" class="btn btn-primary w-100 py-3 px-5">Submit Now</button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
-
-            <!-- Opening Hours -->
-            <div class="col-lg-6">
-                <div class="appointment-time p-5">
-                    <h1 class="display-5 mb-4">Opening Hours</h1>
-                    <div class="d-flex justify-content-between fs-5 text-white">
-                        <p>Monday:</p>
-                        <p>8:00 am – 6:00 pm</p>
+    
+        <!-- Modal Video -->
+        <div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="videoModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content rounded-0">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="videoModalLabel">Video</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
-                    <div class="d-flex justify-content-between fs-5 text-white">
-                        <p>Tuesday:</p>
-                        <p>8:00 am – 6:00 pm</p>
+                    <div class="modal-body p-0">
+                        <video id="videoPlayer" class="w-100" controls>
+                            <source src="video.mp4" type="video/mp4">
+                            Your browser does not support HTML5 video.
+                        </video>
                     </div>
-                    <div class="d-flex justify-content-between fs-5 text-white">
-                        <p>Wednesday:</p>
-                        <p>8:00 am – 6:00 pm</p>
-                    </div>
-                    <div class="d-flex justify-content-between fs-5 text-white">
-                        <p>Thursday:</p>
-                        <p>8:00 am – 6:00 pm</p>
-                    </div>
-                    <div class="d-flex justify-content-between fs-5 text-white">
-                        <p>Friday:</p>
-                        <p>8:00 am – 6:00 pm</p>
-                    </div>
-                    <div class="d-flex justify-content-between fs-5 text-white">
-                        <p>Saturday:</p>
-                        <p>9:00 am – 5:00 pm</p>
-                    </div>
-                    <div class="d-flex justify-content-between fs-5 text-white mb-4">
-                        <p>Sunday:</p>
-                        <p>10:00 am – 5:00 pm</p>
-                    </div>
-                    <p class="text-dark">Check out our seasonal discounts and special offers for the best spa experience.</p>
                 </div>
             </div>
         </div>
+    
+        <script>
+            // Stop video when modal closes
+            const videoModal = document.getElementById('videoModal');
+            const videoPlayer = document.getElementById('videoPlayer');
+    
+            videoModal.addEventListener('hidden.bs.modal', function () {
+                videoPlayer.pause();
+                videoPlayer.currentTime = 0;
+            });
+    
+            // Play video when modal opens
+            videoModal.addEventListener('shown.bs.modal', function () {
+                videoPlayer.play();
+            });
+        </script>
+    </section>
+    
+
+<!-- Appointment Start -->
+<section id="appointment">
+    <div class="container-fluid appointment py-5">
+        <div class="container py-5">
+            <div class="row g-5 align-items-center">
+
+                <!-- Appointment Form -->
+                <div class="col-lg-6">
+                    <div class="appointment-form p-5">
+                        <p class="fs-4 text-uppercase text-primary">Get In Touch</p>
+                        <h1 class="display-4 mb-4 text-white">Book an Appointment</h1>
+                        <form id="appointmentForm">
+                            <div class="row gy-3 gx-4">
+                                <div class="col-lg-6">
+                                    <input type="text" class="form-control py-3 border-white bg-transparent text-white" id="firstName" placeholder="First Name">
+                                </div>
+                                <div class="col-lg-6">
+                                    <input type="email" class="form-control py-3 border-white bg-transparent text-white" id="email" placeholder="Email">
+                                </div>
+                                <div class="col-lg-6">
+                                    <select class="form-select py-3 border-white bg-transparent" id="service">
+                                        <option value="">Select Service</option>
+                                        <option value="Full Body Massage">Full Body Massage</option>
+                                        <option value="Pedicure & Manicure">Pedicure & Manicure</option>
+                                        <option value="Facial Therapy">Facial Therapy</option>
+                                    </select>
+                                </div>
+                                <div class="col-lg-6">
+                                    <input type="date" class="form-control py-3 border-white bg-transparent" id="date">
+                                </div>
+                                <div class="col-lg-12">
+                                    <textarea class="form-control border-white bg-transparent text-white" id="message" cols="30" rows="5" placeholder="Write your message or requests"></textarea>
+                                </div>
+                                <div class="col-lg-12">
+                                    <button type="button" class="btn btn-primary w-100 py-3 px-5" onclick="sendWhatsApp()">Submit Now</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- Opening Hours -->
+                <div class="col-lg-6">
+                    <div class="appointment-time p-5">
+                        <h1 class="display-5 mb-4">Opening Hours</h1>
+                        <div class="d-flex justify-content-between fs-5 text-white">
+                            <p>Monday:</p><p>8:00 am – 6:00 pm</p>
+                        </div>
+                        <div class="d-flex justify-content-between fs-5 text-white">
+                            <p>Tuesday:</p><p>8:00 am – 6:00 pm</p>
+                        </div>
+                        <div class="d-flex justify-content-between fs-5 text-white">
+                            <p>Wednesday:</p><p>8:00 am – 6:00 pm</p>
+                        </div>
+                        <div class="d-flex justify-content-between fs-5 text-white">
+                            <p>Thursday:</p><p>8:00 am – 6:00 pm</p>
+                        </div>
+                        <div class="d-flex justify-content-between fs-5 text-white">
+                            <p>Friday:</p><p>8:00 am – 6:00 pm</p>
+                        </div>
+                        <div class="d-flex justify-content-between fs-5 text-white">
+                            <p>Saturday:</p><p>9:00 am – 5:00 pm</p>
+                        </div>
+                        <div class="d-flex justify-content-between fs-5 text-white mb-4">
+                            <p>Sunday:</p><p>10:00 am – 5:00 pm</p>
+                        </div>
+                        <p class="text-dark">Check out our seasonal discounts and special offers for the best spa experience.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
     </div>
+</section>
+
+<script>
+function sendWhatsApp() {
+    const name = document.getElementById('firstName').value.trim();
+    const email = document.getElementById('email').value.trim();
+    const service = document.getElementById('service').value;
+    const date = document.getElementById('date').value.trim();
+    const msg = document.getElementById('message').value.trim();
+
+    // Validate all required fields
+    if (name === "" || email === "" || service === "" || date === "") {
+        alert("Please fill in all required fields");
+        return;
+    }
+
+    const text = `Hello, I would like to book an appointment.%0AName: ${name}%0AEmail: ${email}%0AService: ${service}%0ADate: ${date}%0A${msg ? 'Message: ' + msg : ''}`;
+
+    // Open WhatsApp with the message
+    window.open(`https://wa.me/254725389089?text=${text}`, '_blank');
+}
+</script>
+
+
+
+
 
     <!-- Counter Section -->
     <div class="container-fluid counter-section">
@@ -508,6 +579,7 @@
 
 
 
+<section id ="contact">
 <!-- Contact Start -->
 <div class="container-fluid py-5">
     <div class="container py-5">
@@ -532,7 +604,7 @@
                             <i class="fas fa-envelope fa-2x text-primary me-4"></i>
                             <div>
                                 <h4>Email Us</h4>
-                                <p class="mb-0">info@yourspa.com</p>
+                                <p class="mb-0">doriskaura@gmail.com</p>
                             </div>
                         </div>
                     </div>
@@ -542,7 +614,7 @@
                             <i class="fas fa-phone-alt fa-2x text-primary me-4"></i>
                             <div>
                                 <h4>Call Us</h4>
-                                <p class="mb-0">+254 700 000 000</p>
+                                <p class="mb-0">+254 725 389 089</p>
                             </div>
                         </div>
                     </div>
@@ -564,11 +636,17 @@
                 <div class="text-center p-4 rounded-bottom bg-primary">
                     <h4 class="text-white fw-bold mb-3">Follow Us</h4>
                     <div class="d-flex align-items-center justify-content-center">
-                        <a href="#" class="btn btn-light btn-light-outline-0 btn-square rounded-circle me-3"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" class="btn btn-light btn-light-outline-0 btn-square rounded-circle me-3"><i class="fab fa-twitter"></i></a>
-                        <a href="#" class="btn btn-light btn-light-outline-0 btn-square rounded-circle me-3"><i class="fab fa-instagram"></i></a>
-                        <a href="#" class="btn btn-light btn-light-outline-0 btn-square rounded-circle"><i class="fab fa-linkedin-in"></i></a>
-                    </div>   
+                        <a href="https://www.facebook.com/doris.kaimuri.12" target="_blank" class="btn btn-light btn-light-outline-0 btn-square rounded-circle me-3">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://www.tiktok.com/@doriskaura906" target="_blank" class="btn btn-light btn-light-outline-0 btn-square rounded-circle me-3">
+                            <i class="fab fa-tiktok"></i>
+                        </a>
+                        <a href="https://www.instagram.com/doriskaura?igsh=MWtodndpcnVhcjhnNw==" target="_blank" class="btn btn-light btn-light-outline-0 btn-square rounded-circle">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                      
                 </div>
             </div>
 
@@ -577,8 +655,12 @@
 </div>
 <!-- Contact End -->
 
+</section>
 
 
+<a href="https://wa.me/254725389089" target="_blank" class="whatsapp-float">
+    <i class="fab fa-whatsapp"></i>
+</a>
 
 
       <!-- ===================== Footer Start ===================== -->
@@ -594,11 +676,7 @@
                     A relaxing sanctuary in Diani offering professional full body massage,
                     pedicure, manicure, scrubs, and holistic wellness treatments.
                 </p>
-                <div class="d-flex mt-3">
-                    <a href="#" class="btn btn-outline-light btn-sm rounded-circle me-2"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#" class="btn btn-outline-light btn-sm rounded-circle me-2"><i class="fab fa-instagram"></i></a>
-                    <a href="#" class="btn btn-outline-light btn-sm rounded-circle"><i class="fab fa-whatsapp"></i></a>
-                </div>
+                
             </div>
 
             <!-- Quick Links -->
@@ -639,19 +717,15 @@
                     coconutmassage@gmail.com
                 </p>
 
-                <a href="appointment.html" class="btn btn-primary rounded-pill px-4 mt-2">
+                <a href="#appointment" class="btn btn-primary rounded-pill px-4 mt-2">
                     Book Appointment
                 </a>
             </div>
         </div>
 
-        <hr class="border-secondary mt-5">
+       
 
-        <div class="text-center pb-3">
-            <p class="mb-0">
-                © 2025 Coconut Massage. All Rights Reserved.
-            </p>
-        </div>
+        
 
     </div>
 </footer>
@@ -663,21 +737,13 @@
             <div class="container">
                 <div class="row g-4 align-items-center">
                     <div class="col-md-4 text-center text-md-start mb-md-0">
-                        <span class="text-light"><a href="#"><i class="fas fa-copyright text-light me-2"></i>Your Site Name</a>, All right reserved.</span>
+                        <span class="text-light"><a href="#"><i class="fas fa-copyright text-light me-2"></i>coconutmassage</a>, All right reserved.</span>
                     </div>
-                    <div class="col-md-4">
-                        <div class="d-flex justify-content-center">
-                            <a href="" class="btn btn-light btn-light-outline-0 btn-sm-square rounded-circle me-2"><i class="fab fa-facebook-f"></i></a>
-                            <a href="" class="btn btn-light btn-light-outline-0 btn-sm-square rounded-circle me-2"><i class="fab fa-twitter"></i></a>
-                            <a href="" class="btn btn-light btn-light-outline-0 btn-sm-square rounded-circle me-2"><i class="fab fa-instagram"></i></a>
-                            <a href="" class="btn btn-light btn-light-outline-0 btn-sm-square rounded-circle me-0"><i class="fab fa-linkedin-in"></i></a>
-                        </div>
-                    </div>
+                    
                     <div class="col-md-4 text-center text-md-end text-white">
-                        <!--/*** This template is free as long as you keep the below author’s credit link/attribution link/backlink. ***/-->
-                        <!--/*** If you'd like to use the template without the below author’s credit link/attribution link/backlink, ***/-->
-                        <!--/*** you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". ***/-->
-                        Designed By <a class="border-bottom" href="https://htmlcodex.com">HTML Codex</a> Distributed By <a class="border-bottom" href="https://themewagon.com">ThemeWagon</a>
+                        
+                        Designed By <a class="border-bottom" href="https://bOTHIVE.CO.KE">bothive.co.ke</a>
+                         
                     </div>
                 </div>
             </div>
