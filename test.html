@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>WhatsApp Test</title>
+</head>
+<body style="background:black; padding:40px;">
+
+    <input id="firstName" placeholder="Name"><br><br>
+    <input id="email" placeholder="Email"><br><br>
+
+    <select id="service">
+        <option value="">Select Service</option>
+        <option value="Full Body Massage">Full Body Massage</option>
+        <option value="Pedicure & Manicure">Pedicure & Manicure</option>
+        <option value="Facial Therapy">Facial Therapy</option>
+    </select><br><br>
+
+    <input type="date" id="date"><br><br>
+
+    <textarea id="message" placeholder="Message"></textarea><br><br>
+
+    <button onclick="sendWhatsApp()">Send WhatsApp</button>
+
+<script>
+function sendWhatsApp() {
+    const name = document.getElementById('firstName').value;
+    const email = document.getElementById('email').value;
+    const service = document.getElementById('service').value;
+    const date = document.getElementById('date').value;
+    const msg = document.getElementById('message').value;
+
+    const message =
+        "Hello, I would like to book an appointment.\n" +
+        "Name: " + name + "\n" +
+        "Email: " + email + "\n" +
+        "Service: " + service + "\n" +
+        "Date: " + date + "\n" +
+        (msg ? "Message: " + msg : "");
+
+    const encoded = encodeURIComponent(message);
+
+    window.open("https://wa.me/254725389089?text=" + encoded, "_blank");
+}
+</script>
+
+</body>
+</html>

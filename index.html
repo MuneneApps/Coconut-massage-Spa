@@ -52,6 +52,11 @@
                 transform: scale(1.1);
                 text-decoration: none;
             }
+
+
+            input[type="date"]::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+}
             </style>
     </head>
 
@@ -426,33 +431,44 @@
                     <div class="appointment-form p-5">
                         <p class="fs-4 text-uppercase text-primary">Get In Touch</p>
                         <h1 class="display-4 mb-4 text-white">Book an Appointment</h1>
+
                         <form id="appointmentForm">
                             <div class="row gy-3 gx-4">
+                                
                                 <div class="col-lg-6">
-                                    <input type="text" class="form-control py-3 border-white bg-transparent text-white" id="firstName" placeholder="First Name">
+                                    <input type="text" class="form-control py-3 border-white bg-transparent text-white" id="appointmentFirstName" placeholder="First Name">
                                 </div>
+
                                 <div class="col-lg-6">
-                                    <input type="email" class="form-control py-3 border-white bg-transparent text-white" id="email" placeholder="Email">
+                                    <input type="email" class="form-control py-3 border-white bg-transparent text-white" id="appointmentEmail" placeholder="Email">
                                 </div>
+
+                                <!-- Service Selector -->
                                 <div class="col-lg-6">
-                                    <select class="form-select py-3 border-white bg-transparent" id="service">
+                                    <select class="form-select py-3 border-white bg-transparent text-dark" id="appointmentService" style="color:black !important;">
                                         <option value="">Select Service</option>
                                         <option value="Full Body Massage">Full Body Massage</option>
                                         <option value="Pedicure & Manicure">Pedicure & Manicure</option>
                                         <option value="Facial Therapy">Facial Therapy</option>
                                     </select>
                                 </div>
+
+                                <!-- Date Input -->
                                 <div class="col-lg-6">
-                                    <input type="date" class="form-control py-3 border-white bg-transparent" id="date">
+                                    <input type="date" class="form-control py-3 border-white bg-transparent text-white" id="appointmentDate" style="color:white;">
                                 </div>
+
                                 <div class="col-lg-12">
-                                    <textarea class="form-control border-white bg-transparent text-white" id="message" cols="30" rows="5" placeholder="Write your message or requests"></textarea>
+                                    <textarea class="form-control border-white bg-transparent text-white" id="appointmentMessage" rows="5" placeholder="Write your message or requests"></textarea>
                                 </div>
+
                                 <div class="col-lg-12">
-                                    <button type="button" class="btn btn-primary w-100 py-3 px-5" onclick="sendWhatsApp()">Submit Now</button>
+                                    <button type="button" class="btn btn-primary w-100 py-3 px-5" id="appointmentSubmitBtn">Submit Now</button>
                                 </div>
+
                             </div>
                         </form>
+
                     </div>
                 </div>
 
@@ -460,56 +476,24 @@
                 <div class="col-lg-6">
                     <div class="appointment-time p-5">
                         <h1 class="display-5 mb-4">Opening Hours</h1>
-                        <div class="d-flex justify-content-between fs-5 text-white">
-                            <p>Monday:</p><p>8:00 am – 6:00 pm</p>
-                        </div>
-                        <div class="d-flex justify-content-between fs-5 text-white">
-                            <p>Tuesday:</p><p>8:00 am – 6:00 pm</p>
-                        </div>
-                        <div class="d-flex justify-content-between fs-5 text-white">
-                            <p>Wednesday:</p><p>8:00 am – 6:00 pm</p>
-                        </div>
-                        <div class="d-flex justify-content-between fs-5 text-white">
-                            <p>Thursday:</p><p>8:00 am – 6:00 pm</p>
-                        </div>
-                        <div class="d-flex justify-content-between fs-5 text-white">
-                            <p>Friday:</p><p>8:00 am – 6:00 pm</p>
-                        </div>
-                        <div class="d-flex justify-content-between fs-5 text-white">
-                            <p>Saturday:</p><p>9:00 am – 5:00 pm</p>
-                        </div>
-                        <div class="d-flex justify-content-between fs-5 text-white mb-4">
-                            <p>Sunday:</p><p>10:00 am – 5:00 pm</p>
-                        </div>
+
+                        <div class="d-flex justify-content-between fs-5 text-white"><p>Monday:</p><p>8:00 am – 6:00 pm</p></div>
+                        <div class="d-flex justify-content-between fs-5 text-white"><p>Tuesday:</p><p>8:00 am – 6:00 pm</p></div>
+                        <div class="d-flex justify-content-between fs-5 text-white"><p>Wednesday:</p><p>8:00 am – 6:00 pm</p></div>
+                        <div class="d-flex justify-content-between fs-5 text-white"><p>Thursday:</p><p>8:00 am – 6:00 pm</p></div>
+                        <div class="d-flex justify-content-between fs-5 text-white"><p>Friday:</p><p>8:00 am – 6:00 pm</p></div>
+                        <div class="d-flex justify-content-between fs-5 text-white"><p>Saturday:</p><p>9:00 am – 5:00 pm</p></div>
+                        <div class="d-flex justify-content-between fs-5 text-white mb-4"><p>Sunday:</p><p>10:00 am – 5:00 pm</p></div>
+
                         <p class="text-dark">Check out our seasonal discounts and special offers for the best spa experience.</p>
                     </div>
                 </div>
 
             </div>
         </div>
-    </div>
+    </div> 
 </section>
 
-<script>
-function sendWhatsApp() {
-    const name = document.getElementById('firstName').value.trim();
-    const email = document.getElementById('email').value.trim();
-    const service = document.getElementById('service').value;
-    const date = document.getElementById('date').value.trim();
-    const msg = document.getElementById('message').value.trim();
-
-    // Validate all required fields
-    if (name === "" || email === "" || service === "" || date === "") {
-        alert("Please fill in all required fields");
-        return;
-    }
-
-    const text = `Hello, I would like to book an appointment.%0AName: ${name}%0AEmail: ${email}%0AService: ${service}%0ADate: ${date}%0A${msg ? 'Message: ' + msg : ''}`;
-
-    // Open WhatsApp with the message
-    window.open(`https://wa.me/254725389089?text=${text}`, '_blank');
-}
-</script>
 
 
 
@@ -768,6 +752,29 @@ function sendWhatsApp() {
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+
+
+    <script>
+        document.addEventListener("click", function(e) {
+            if (e.target && e.target.id === "appointmentSubmitBtn") {
+                const name = document.getElementById('appointmentFirstName').value.trim();
+                const email = document.getElementById('appointmentEmail').value.trim();
+                const service = document.getElementById('appointmentService').value.trim();
+                const date = document.getElementById('appointmentDate').value.trim();
+                const msg = document.getElementById('appointmentMessage').value.trim();
+        
+                if (!name || !email || !service || !date) {
+                    alert("Please fill in all required fields");
+                    return;
+                }
+        
+                const text = `Hello, I would like to book an appointment.%0AName: ${name}%0AEmail: ${email}%0AService: ${service}%0ADate: ${date}%0A${msg ? 'Message: ' + msg : ''}`;
+                window.open(`https://wa.me/254725389089?text=${text}`, "_blank");
+            }
+        });
+    </script>
+        
+        
     </body>
 
 </html>
