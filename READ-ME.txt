@@ -1,6 +1,6 @@
-  =>  Template Name    : Sparlex - Beauty & Spa Website Template
+  =>  Template Name    : Coconut Massage - Beauty & Massage Parlour Website Template
 
-  =>  Template Link    : https://htmlcodex.com/spa-website-template
+  =>  Template Link    : https://htmlcodex.com/massage-website-template
 
   =>  Template License : https://htmlcodex.com/license (or read the LICENSE.txt file)
 
